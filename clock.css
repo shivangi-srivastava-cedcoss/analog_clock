@@ -76,3 +76,25 @@ body
     border-radius: 16px;
     color: white;
 }
+@media (min-width:552px) and (max-width:760px)
+{
+    .clock
+    {
+        top: 10vh;
+        right: 23vw;
+    }
+    .digital
+    {
+        top: 40vh;
+        left: 57vw;
+        padding: 15px 17px;
+        font-size: 2.7em;
+    }
+}
+@media (max-width:310px)
+{
+    .digital
+    {
+        padding: 15px 17px;
+    }
+}
