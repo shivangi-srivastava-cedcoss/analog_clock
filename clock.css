@@ -11,8 +11,8 @@ body
 }
 .clock
 {
-    width: 266px;
-    height: 266px;
+    width: 350px;
+    height: 350px;
     background-image: url(clock12.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,10 +20,10 @@ body
     align-items: center;
     display: flex;
     position: relative;
-    box-shadow: 0px 0px 18px 10px #baf3ec;
+    box-shadow: -1px -1px 13px 6px #030303;
     border-radius: 50%;
-    border: 14px solid #60c596;
-    top: 18vh;
+    border: 8px solid transparent;
+    top: 11vh;
 }
 .hands
 {
@@ -32,24 +32,25 @@ body
     background: #60c596;
     border-radius: 25%;
     position: absolute;
+    box-shadow: 0px 0px 9px 1px #000;
 }
 .hourhand
 {
-    height: 59px;
-    top: 74px;
+    height: 77px;
+    top: 98px;
     z-index: 3;
 }
 .minhand
 {
-    height: 88px;
-    top: 46px;
+    height: 100px;
+    top: 75px;
     z-index: 2;
 }
 .sechand
 {
     width: 2px;
-    height: 86px;
-    top: 48px;
+    height: 122px;
+    top: 55px;
     background: #66ffb8;
     z-index: 4;
 }
@@ -58,10 +59,12 @@ body
     width: 12px;
     height: 12px;
     position: absolute;
-    top: 127px;
+    top: 170px;
+    left: 170px;
     background: #66ffb8;
     border-radius: 50%;
     z-index: 4;
+    box-shadow: 0px 0px 9px 1px #000;
 }
 .digital
 {
@@ -69,17 +72,19 @@ body
     align-items: center;
     display: block;
     position: absolute;
-    top: 73vh;
-    font-size: 3em;
-    background: #60c596;
+    top: 68vh;
+    font-size: 8em;
     padding: 15px 39px;
     border-radius: 16px;
     color: white;
+    text-shadow: -6px -4px 3px black;
 }
 @media (min-width:552px) and (max-width:760px)
 {
     .clock
     {
+        width: 288px;
+        height:288px;
         top: 10vh;
         right: 23vw;
     }
@@ -90,11 +95,89 @@ body
         padding: 15px 17px;
         font-size: 2.7em;
     }
+    .sechand
+    {
+        height: 99px;
+        top:47px;
+    }
+    .circle
+    {
+        top:138px;
+        left:138px;
+    }
+    .minhand
+    {
+        height: 88px;
+        top:54px;
+    }
+    .hourhand
+    {
+        height:60px;
+        top:82px;
+    }
 }
-@media (max-width:310px)
+
+@media (min-width:340px) and (max-width:550px)
 {
+    .clock{
+        width: 288px;
+        height:288px;
+    }
+    .circle
+    {
+        top:140px;
+        left:139px;
+    }
+    .minhand
+    {
+        top:47px;
+    }
+    .sechand
+    {
+        height:100px;
+        top:47px;
+        left:145px;
+    }
+    .hourhand
+    {
+        top:66px;
+    }
     .digital
     {
-        padding: 15px 17px;
+        font-size: 4em;
+        padding:0px;
+    }
+}
+@media (max-width:330px)
+{
+    .clock{
+        width: 238px;
+        height:238px;
+    }
+    .circle
+    {
+        top:115px;
+        left:114px;
+    }
+    .minhand
+    {
+        top:37px;
+        height: 85px;
+    }
+    .sechand
+    {
+        height:90px;
+        top:30px;
+        left:120px;
+    }
+    .hourhand
+    {
+        height:60px;
+        top:59px;
+    }
+    .digital
+    {
+        font-size: 3.2em;
+        padding:0px;
     }
 }
