@@ -20,7 +20,7 @@ body
     align-items: center;
     display: flex;
     position: relative;
-    box-shadow: -1px -1px 13px 6px #030303;
+    box-shadow: -1px -1px 11px 3px #0d3232;
     border-radius: 50%;
     border: 8px solid transparent;
     top: 11vh;
